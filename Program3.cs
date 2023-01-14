@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static double Power(double x, double n)
     {
@@ -18,7 +18,12 @@
                           */
 
         Console.Write("Enter n: ");
-        int n = Convert.ToInt32(Console.ReadLine());
+        long n = Convert.ToInt64(Console.ReadLine());
+        if (n < 0)
+        {
+            Console.WriteLine("we cant find factorial from negative num");
+            return;
+        }
         long fact = 1;
         Console.Write("Enter x: ");
         long x = Convert.ToInt64(Console.ReadLine());
