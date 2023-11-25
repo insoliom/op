@@ -1,0 +1,5 @@
+enum Sport
+{
+    Football,
+    Basketball
+}
